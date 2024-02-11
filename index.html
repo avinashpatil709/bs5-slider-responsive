@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap5 Slider Multiple Items</title>
+    <style>
+        .card-title {
+            min-height: 6rem;
+            /* text-align: center; */
+        }
+
+        .card-title a {
+            text-decoration: none;
+            color: #041e39;
+            font-weight: bold;
+            /* font-size: 22px; */
+            font-family: 'Bebas Neue', sans-serif !important;
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+
+        /* Small devices (landscape phones, 576px and up) sm */
+        @media (min-width: 576px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(100%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-100%);
+            }
+
+        }
+
+        /* Medium devices (tablets, 768px and up) md */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(50%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) lg*/
+        @media (min-width: 992px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(33.3333333333333333333333333333333333333%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-33.3333333333333333333333333333333333333%);
+            }
+        }
+
+        /* X-Large devices (large desktops, 1200px and up) xl*/
+        @media (min-width: 1200px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        /* XX-Large devices (larger desktops, 1400px and up) xxl*/
+        @media (min-width: 1400px) {}
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid  my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-6  col-lg-4 col-xl-3 h-100">
+                            <div class="card m-2">
+                                <a
+                                    href="https://demo.avipatil.in/project/investigating-the-existences-of-the-sevayats-of-jagannath-puri-odisha/"><img
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/pagoda-4839805_640-1.jpg"
+                                        class="card-img-top"
+                                        alt="Investigating the Existences of the Sevayats of Jagannath Puri, Odisha"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/investigating-the-existences-of-the-sevayats-of-jagannath-puri-odisha/">Investigating
+                                            the Existences of the Sevayats of Jagannath Puri, Odisha</a></h5>
+                                    <p class="card-text">
+                                        <span style="margin-right:10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right:10px;"><b>Starts:</b> June 24, 2024</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  ">
+                        <div class="col-md-6  col-lg-4 col-xl-3 h-100">
+                            <div class="card m-2">
+                                <a
+                                    href="https://demo.avipatil.in/project/dhabon-ki-mulkatain-the-dhaba-biological-system-on-fabulous-trunk-street-murthal-haryana"><img
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/appetizer-1386743_640-1.jpg"
+                                        class="card-img-top"
+                                        alt="Dhabon ki Mulkatain - The Dhaba Biological system on Fabulous Trunk Street, Murthal, Haryana"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/dhabon-ki-mulkatain-the-dhaba-biological-system-on-fabulous-trunk-street-murthal-haryana">Dhabon
+                                            ki Mulkatain - The Dhaba Biological system on Fabulous Trunk Street,
+                                            Murthal, Haryana</a></h5>
+                                    <p class="card-text">
+                                        <span style="margin-right:10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right:10px;"><b>Starts:</b> June 24, 2024</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6  col-lg-4 col-xl-3 h-100">
+                            <div class="card m-2">
+                                <a
+                                    href="https://demo.avipatil.in/project/quiet-after-the-tempest-tibetan-exile-adminstration-and-reflection-in-bylakuppe-karnataka/"><img
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/buddhism-1822518_640.jpg"
+                                        class="card-img-top"
+                                        alt="Quiet After the Tempest Tibetan Exile, Adminstration and Reflection in Bylakuppe, Karnataka"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/quiet-after-the-tempest-tibetan-exile-adminstration-and-reflection-in-bylakuppe-karnataka/">Quiet
+                                            After the Tempest Tibetan Exile, Adminstration in Bylakuppe, Karnataka</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        <span style="margin-right:10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right:10px;"><b>Starts:</b> June 24, 2024</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6  col-lg-4 col-xl-3 h-100">
+                            <div class="card m-2">
+                                <a href="https://demo.avipatil.in/project/amazed-a-record-of-ladies-in-cricket-mumbai/"><img
+                                        class="card-img-top"
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/sport-4796426_640.jpg"
+                                        alt="Amazed - A Record of Ladies in Cricket, Mumbai
+                                    " /></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/amazed-a-record-of-ladies-in-cricket-mumbai/">Amazed
+                                            - A Record of Ladies in Cricket, Mumbai
+                                        </a></h5>
+                                    <p class="card-text"><span style="margin-right: 10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right: 10px;"><b>Starts:</b> June 24, 2024</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6  col-lg-4 col-xl-3  h-100">
+                            <div class="card m-2">
+                                <a
+                                    href="https://demo.avipatil.in/project/world-record-breaking-performance-athlete-shatters-long-standing-records-in-thrilling-showdown/"><img
+                                        class="card-img-top"
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/Take-an-Underwater-Break-banner-1.jpg"
+                                        alt="World Record-Breaking: Athlete Shatters Long-Standing Records in Thrilling Showdown
+                                    " /></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/world-record-breaking-performance-athlete-shatters-long-standing-records-in-thrilling-showdown/">World
+                                            Record-Breaking: Athlete Shatters Long-Standing Records in Thrilling
+                                            Showdown
+                                        </a></h5>
+                                    <p class="card-text"><span style="margin-right: 10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right: 10px;"><b>Starts:</b> July 1, 2024</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6  col-lg-4 col-xl-3  h-100">
+                            <div class="card m-2">
+                                <a
+                                    href="https://demo.avipatil.in/project/kamal-natha-permanence-and-transformation-in-the-sundarbans-west-bengal/"><img
+                                        class="card-img-top"
+                                        src="https://demo.avipatil.in/wp-content/uploads/2023/10/tomatoes-1867744_640-1.jpg"
+                                        alt="Kamal Natha- Permanence and Transformation in the Sundarbans, West Bengal" /></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a
+                                            href="https://demo.avipatil.in/project/kamal-natha-permanence-and-transformation-in-the-sundarbans-west-bengal/">Kamal
+                                            Natha- Permanence and Transformation in the Sundarbans, West Bengal
+                                        </a></h5>
+                                    <p class="card-text"><span style="margin-right: 10px;"><b>Length:</b> 5 Days</span>
+                                        <span style="margin-right: 10px;"><b>Starts:</b> July 1, 2024</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item');
+        items.forEach((el) => {
+            const minPerSlide = 5;
+            let next = el.nextElementSibling;
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
